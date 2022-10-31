@@ -10,7 +10,6 @@ body {
 h1 {
   font-size: 5rem;
   letter-spacing: 0.9px;
-  width: fit-content;
 }
 .app {
     padding: 4rem;
@@ -25,7 +24,32 @@ h1 {
   padding: 1rem;
   text-transform: uppercase;
 }
-
+.search {
+    width: 30%;
+    margin: 1rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+    padding: 1rem;
+    border-radius: 2rem;
+    background: #1c1d22;
+    box-shadow: 5px 5px 7px #1c1d1f, -5px -5px 7px #222527;
+  }
+.search input {
+  border: none;
+  font-size: 1.5rem;
+  padding-right: 1rem;
+  width: 100%;
+  outline: none;
+  color: #a1a1a1;
+  background-color: #1c1d22;
+}
+.search-button{
+    background-color: #1c1d22;
+    color: #a1a1a1;
+    cursor: pointer;
+}
 .container {
   align-items: center;
   width: 100%;
@@ -67,4 +91,27 @@ h1 {
 .movie-title {
   font-family: "Roboto Slab", serif;
   font-size: 1.5rem;
+  text-align: center;
+}
+
+.empty {
+    width: 100%;
+    margin-top: 2rem;
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .empty h2 {
+    font-size: 1.25rem;
+  }
+.empty-image {
+    width: 320px;
+  height: 480px;
+  margin: 2.5rem 1rem;
+  position: relative;
+  border: none;
+  cursor: pointer;
+  text-align: left;
 }
