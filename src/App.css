@@ -4,12 +4,8 @@
   box-sizing: border-box;
 }
 body {
-  background-color: #1c1d22;
+  background-color: rgb(28, 29, 34);
   color: #ffffff;
-}
-h1 {
-  font-size: 5rem;
-  letter-spacing: 0.9px;
 }
 .app {
     padding: 4rem;
@@ -17,12 +13,26 @@ h1 {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    background: linear-gradient();
   
 }
 .header {
-  font-family: "Roboto Slab", serif;
   padding: 1rem;
   text-transform: uppercase;
+}
+.header h1 {
+    font-size: 5rem;
+    letter-spacing: 1px;
+    font-family: "Roboto Slab", serif; 
+    background: linear-gradient(
+    180deg,
+    rgb(200, 200, 200), 
+    rgba(28, 29, 34, 0)
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  width: fit-content;
 }
 .search {
     width: 30%;
@@ -40,10 +50,10 @@ h1 {
   border: none;
   font-size: 1.5rem;
   padding-right: 1rem;
-  width: 100%;
+  width: 80rem;
   outline: none;
   color: #a1a1a1;
-  background-color: #1c1d22;
+  background-color: rgb(28, 29, 34);
 }
 .search-button{
     background-color: #1c1d22;
@@ -51,7 +61,6 @@ h1 {
     cursor: pointer;
 }
 .container {
-  align-items: center;
   width: 100%;
   align-items: center;
   padding: 1rem 0;
@@ -68,8 +77,8 @@ h1 {
   border-radius: 5%;
 
 }
-.movies {
-  width: 320px;
+.movie-container {
+  width: 330px;
   height: 450px;
   margin: 2.5rem 1rem;
   position: relative;
@@ -107,11 +116,44 @@ h1 {
     font-size: 1.25rem;
   }
 .empty-image {
-    width: 320px;
+  width: 320px;
   height: 480px;
   margin: 2.5rem 1rem;
   position: relative;
   border: none;
   cursor: pointer;
   text-align: left;
+}
+
+.hero{
+    min-height: 40rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: top center;
+    display: flex;
+    align-items: flex-end;
+    justify-content: start;
+    margin: 1rem 0;
+    
+}
+.hero-content {
+    max-width: 100%;
+    padding: 2rem;
+    font-family: "Roboto Slab", serif;
+}
+
+.hero-title {
+    font-size: 5rem;
+    margin-bottom: 10px;
+
+}
+.hero-overview {
+    font-size: 1.2rem; 
+    margin: 0;
+}
+
+.hero-button {
+    background-color: transparent;
+    margin-bottom: 0.7rem;
+    cursor: pointer;
 }

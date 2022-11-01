@@ -1,12 +1,12 @@
 import React from 'react'
 
-function MovieCard({ movie }) {
+function MovieCard({ movie, selectMovie }) {
     console.log(movie);
     const noImage = "https://st4.depositphotos.com/14953852/22772/v/600/depositphotos_227725020-stock-illustration-image-available-icon-flat-vector.jpg";
 
     return (
-        <div className='movie-card'>
-            <div className='movies'>
+        <div className='movie-card' onClick={() => selectMovie(movie)}>
+            <div className='movie-container'>
                 <div className='movie'>
                     {
                         movie.poster_path ?
