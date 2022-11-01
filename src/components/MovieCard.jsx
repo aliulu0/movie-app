@@ -1,7 +1,6 @@
 import React from 'react'
 
 function MovieCard({ movie, selectMovie }) {
-    console.log(movie);
     const noImage = "https://st4.depositphotos.com/14953852/22772/v/600/depositphotos_227725020-stock-illustration-image-available-icon-flat-vector.jpg";
 
     return (

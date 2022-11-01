@@ -8,7 +8,7 @@ body {
   color: #ffffff;
 }
 .app {
-    padding: 4rem;
+    padding: 2rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -50,7 +50,8 @@ body {
   border: none;
   font-size: 1.5rem;
   padding-right: 1rem;
-  width: 80rem;
+  width: 100rem;
+  min-height: 20%;
   outline: none;
   color: #a1a1a1;
   background-color: rgb(28, 29, 34);
@@ -68,7 +69,7 @@ body {
   flex-wrap: wrap;
   background-color: #1c1d22;
   justify-content: center;
-  gap: 1.5rem;
+  gap: 1rem;
   
 }
 .movie-card{
@@ -102,6 +103,9 @@ body {
   font-size: 1.5rem;
   text-align: center;
 }
+.movie:hover {
+    transform: scale(1.05, 1.05);
+  }
 
 .empty {
     width: 100%;
@@ -125,35 +129,106 @@ body {
   text-align: left;
 }
 
-.hero{
-    min-height: 40rem;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: top center;
-    display: flex;
-    align-items: flex-end;
-    justify-content: start;
-    margin: 1rem 0;
-    
+.modal-container{
+  position: relative;
+  width: 100%;
+  transform: translate(50%, 50%);
+  
 }
+.modal-movie {
+  position: relative;
+  min-height: 70%;
+  max-width: 60%;
+  left: 20%;
+  bottom: 25%;
+  background-size: cover;
+ 
+}
+.modal {
+  position: absolute;
+  top:0;
+  left: 0;
+  bottom: 0;
+  right: 0;  
+}
+
+.close-button {
+  position: fixed;
+  font-size: 2.5rem;
+  color: aliceblue;
+  cursor: pointer;
+  top: 5%;
+  right: 20%;
+}
+
+
 .hero-content {
-    max-width: 100%;
-    padding: 2rem;
-    font-family: "Roboto Slab", serif;
+  max-width: 100%;
+  padding: 2rem;
+  font-family: "Roboto Slab", serif;
+  margin-top: 25rem;
+
 }
 
 .hero-title {
-    font-size: 5rem;
-    margin-bottom: 10px;
+  position: relative;
+  font-size: 4rem;
+  margin-bottom: 1rem;
+  margin-top: 28rem;
 
 }
 .hero-overview {
-    font-size: 1.2rem; 
-    margin: 0;
+  position: relative;
+  font-size: 1.3rem; 
+  margin-top: 1.5rem;
+  
 }
 
 .hero-button {
-    background-color: transparent;
-    margin-bottom: 0.7rem;
-    cursor: pointer;
+  background-color: transparent;
+  cursor: pointer;
+  position: absolute;
+  top: 25rem;
+}
+
+.youtube-container{
+  position: absolute;
+  top:0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+@media screen and (max-width: 600px) {
+  .app {
+    padding: 4rem 2rem;
+  }
+
+  .search {
+    padding: 1rem 1.75rem;
+    width: 100%;
+  }
+
+  .search input {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .app {
+    padding: 4rem 1rem;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  .container {
+    margin-top: 2rem;
+  }
+
+  .movie-card {
+    width: "100%";
+    margin: 1rem;
+  }
 }
