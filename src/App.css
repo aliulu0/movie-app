@@ -81,7 +81,6 @@ body {
 }
 .container {
   width: 100%;
-  padding: 0;
   background-color: #1c1d22;
   display: flex;
   flex-wrap: wrap;
@@ -93,14 +92,14 @@ body {
 }
 
 .movie-card {
-  padding: 1.5rem 0;
+  padding: 1.2rem 0;
   position: relative;
   border-radius: 5%;
   margin-top: 1rem;
 }
 .movie-container {
-  max-width: 20rem;
-  max-height: 30rem;
+  max-width: 15.5rem;
+  max-height: 24rem;
   margin: 1rem;
   position: relative;
   border: none;

@@ -13,9 +13,9 @@ function MovieCard({ movie, selectMovie }) {
                             :
                             <img className='empty-image' key={movie.id} src={noImage} alt='imagenotfound' />
                     }
-                </div>
-                <div className='movie-info'>
-                    <h3 className='movie-title'>{movie.title}</h3>
+                    <div className='movie-info'>
+                        <h3 className='movie-title'>{movie.title}</h3>
+                    </div>
                 </div>
             </div>
         </div>
