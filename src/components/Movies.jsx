@@ -81,6 +81,7 @@ function Movies() {
           width: "100%",
           height: "100%",
           playerVars: {
+            autoplay: 1,
             controls: 0
           }
         }}
