@@ -1,70 +1,46 @@
-# Getting Started with Create React App
+# Movie App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Live Demo
 
-## Available Scripts
+[https://aliulu-movie-trailer-app.netlify.app/](https://aliulu-movie-trailer-app.netlify.app/)
 
-In the project directory, you can run:
+## Get API Key
 
-### `npm start`
+- Accesses The Movie Database API for movie data.
+- REACT_APP_API_KEY=your-api
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+# Setup
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+1. Clone the repository and install it's features.
 
-### `npm test`
+```
+npm install or yarn install
+```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+2. Use the project locally(http://localhost:3000).
 
-### `npm run build`
+```
+npm start or yarn start
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Project Features
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- Getting movie data with Axios. <br />
+- Movie search. <br />
+- Opening the trailer from YouTube. <br />
+- Infinite Scroll ile infinite film yükleme. <br />
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Technologies and Libraries
 
-### `npm run eject`
+- React.js <br />
+- Axios <br />
+- MaterialUI <br />
+- MaterialUI Icon <br />
+- infinite-scroll-component <br />
+- react-youtube <br />
+- dotenv <br /> 
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Screenshots
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+<img src="https://user-images.githubusercontent.com/67802869/199599355-dcf46fe0-a02c-40db-ab4e-bc9f793e2a9a.png" width=800px height=400px />  <img src="https://user-images.githubusercontent.com/67802869/199597836-b5170acb-c899-4e55-9792-9cee3df136a8.png" width=800px height=400px />  <img src="https://user-images.githubusercontent.com/67802869/199598233-8cc0a296-9a8c-409d-b06b-ad3d570ea312.png" width=800px height=400px />  <img src="https://user-images.githubusercontent.com/67802869/199598339-2de436dd-e581-4bab-9ea6-17c638c9a334.png" width=800px height=400px />  <img src="https://user-images.githubusercontent.com/67802869/199598508-ea925287-1878-4b4f-b8e8-23d03c762c9c.png" width=800px height=400px /> 
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
