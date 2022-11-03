@@ -4,19 +4,6 @@ function MovieCard({ movie, selectMovie }) {
 
     const noImage = "https://st4.depositphotos.com/14953852/22772/v/600/depositphotos_227725020-stock-illustration-image-available-icon-flat-vector.jpg";
 
-    function numberInfo() {
-        return (
-            <div className='movie-info-number'>
-                <h3 className='year'>
-                    {movie.release_date.slice(0, 4)}
-                </h3>
-                <h3 className='avarage'>
-                    {parseFloat(movie.vote_average).toFixed(1)}
-                </h3>
-            </div>
-        )
-    }
-
     return (
         <div className='movie-card' onClick={() => selectMovie(movie)}>
             <div className='movie-container'>

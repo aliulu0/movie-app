@@ -25,7 +25,7 @@ body {
 }
 
 .header h1 {
-  font-size: 5rem;
+  font-size: 4rem;
   letter-spacing: 1px;
   font-family: "Roboto Slab", serif;
   background: linear-gradient(180deg, rgb(200, 200, 200), rgba(28, 29, 34, 0));
@@ -98,8 +98,8 @@ body {
   margin-top: 1rem;
 }
 .movie-container {
-  max-width: 15.5rem;
-  max-height: 24rem;
+  max-width: 12rem;
+  max-height: 17rem;
   margin: 1rem;
   position: relative;
   border: none;
@@ -112,59 +112,19 @@ body {
 
 .movie img {
   border-radius: 5%;
-  max-height: 40rem;
+  max-height: 16rem;
   max-width: 100%;
   position: relative;
   margin: 1rem 0;
 }
 .movie-title {
   font-family: "Roboto Slab", serif;
-  font-size: 1.5rem;
+  font-size: 1.1rem;
   text-align: center;
 }
 .movie:hover {
   transform: scale(1.05, 1.05);
 }
-
-@media screen and (max-width: 600px) {
-  .app {
-    padding: 4rem 2rem;
-  }
-
-  .search {
-    padding: 1rem 1.75rem;
-    width: 100%;
-  }
-
-  .search input {
-    font-size: 1rem;
-  }
-
-  .search img {
-    width: 20px;
-    height: 20px;
-  }
-}
-
-@media screen and (max-width: 400px) {
-  .app {
-    padding: 4rem 1rem;
-  }
-
-  h1 {
-    font-size: 2rem;
-  }
-
-  .container {
-    margin-top: 2rem;
-  }
-
-  .movie {
-    width: "100%";
-    margin: 1rem;
-  }
-}
-
 
 .modal-container{
   position: relative;
@@ -206,7 +166,7 @@ body {
   max-width: 100%;
   padding: 2rem;
   font-family: "Roboto Slab", serif;
-  margin-top: 23.2rem;
+  margin-top: 21rem;
 
 }
 .year {
@@ -236,7 +196,7 @@ body {
   position: relative;
   font-size: 3rem;
   margin-bottom: 1rem;
-  margin-top: 20rem;
+  margin-top: 17rem;
 
 }
 .hero-overview {
@@ -250,7 +210,7 @@ body {
   background-color: transparent;
   cursor: pointer;
   position: absolute;
-  top: 20rem;
+  top: 16rem;
 }
 
 .youtube-container{
