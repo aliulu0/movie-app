@@ -206,15 +206,39 @@ body {
   max-width: 100%;
   padding: 2rem;
   font-family: "Roboto Slab", serif;
-  margin-top: 25rem;
+  margin-top: 24rem;
 
+}
+.year {
+  text-align: center;
+  border: 0;
+  font-size: 1.1rem;
+}
+.year h2{
+  min-width: min-content;
+  width: 5%;
+  border-radius: 10%;
+  background-color: #1c1d1f;
+}
+.average{
+  text-align: center;
+  border: 0;
+  margin-top: 2%;
+  font-size: 1.1rem;
+}
+.average h2{
+  
+  min-width: min-content;
+  width: 5%;
+  background-color: #ffaa00;
+  border-radius: 50%;
 }
 
 .hero-title {
   position: relative;
   font-size: 4rem;
   margin-bottom: 1rem;
-  margin-top: 28rem;
+  margin-top: 20rem;
 
 }
 .hero-overview {
@@ -228,7 +252,7 @@ body {
   background-color: transparent;
   cursor: pointer;
   position: absolute;
-  top: 25rem;
+  top: 20rem;
 }
 
 .youtube-container{

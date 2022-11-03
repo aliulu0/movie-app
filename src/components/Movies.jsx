@@ -31,7 +31,6 @@ function Movies() {
       : `movie/popular?api_key=${API_KEY}&page=1`;
     const response = await axios.get(`${API_URL}${type}`);
     setMovies(response.data.results);
-    return response.data.results;
   }
   async function getMovies(searchText) {
     const type = searchText

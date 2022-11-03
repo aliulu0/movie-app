@@ -20,6 +20,18 @@ function ModelMovie({ trailerPlayer, open, handleClose, selectedMovie, player, m
                     <Fade className='modal-movie' in={open}>
                         <div className='modal-content' style={{ backgroundImage: `linear-gradient(to top, rgba(0,0,0,1), rgba(0,0,0,0)),url('https://image.tmdb.org/t/p/w1280${selectedMovie.backdrop_path}')` }}>
                             <div className='hero-content'>
+                                <div className='movie-number-info'>
+                                    <div className='year'>
+                                        <h2>
+                                            {selectedMovie.release_date.slice(0, 4)}
+                                        </h2>
+                                    </div>
+                                    <div className='average'>
+                                        <h2>
+                                            {parseFloat(selectedMovie.vote_average).toFixed(1)}
+                                        </h2>
+                                    </div>
+                                </div>
                                 {
                                     player ?
                                         (selectedMovie.videos && player ? movieTrailer() : null) : (
