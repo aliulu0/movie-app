@@ -206,15 +206,14 @@ body {
   max-width: 100%;
   padding: 2rem;
   font-family: "Roboto Slab", serif;
-  margin-top: 24rem;
+  margin-top: 23.2rem;
 
 }
 .year {
   text-align: center;
   border: 0;
-  font-size: 1.1rem;
 }
-.year h2{
+.year h3{
   min-width: min-content;
   width: 5%;
   border-radius: 10%;
@@ -224,9 +223,8 @@ body {
   text-align: center;
   border: 0;
   margin-top: 2%;
-  font-size: 1.1rem;
 }
-.average h2{
+.average h3{
   
   min-width: min-content;
   width: 5%;
@@ -236,14 +234,14 @@ body {
 
 .hero-title {
   position: relative;
-  font-size: 4rem;
+  font-size: 3rem;
   margin-bottom: 1rem;
   margin-top: 20rem;
 
 }
 .hero-overview {
   position: relative;
-  font-size: 1.3rem; 
+  font-size: 1.1rem; 
   margin-top: 1.5rem;
   
 }

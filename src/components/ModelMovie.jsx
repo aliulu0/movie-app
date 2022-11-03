@@ -22,21 +22,21 @@ function ModelMovie({ trailerPlayer, open, handleClose, selectedMovie, player, m
                             <div className='hero-content'>
                                 <div className='movie-number-info'>
                                     <div className='year'>
-                                        <h2>
+                                        <h3>
                                             {selectedMovie.release_date.slice(0, 4)}
-                                        </h2>
+                                        </h3>
                                     </div>
                                     <div className='average'>
-                                        <h2>
+                                        <h3>
                                             {parseFloat(selectedMovie.vote_average).toFixed(1)}
-                                        </h2>
+                                        </h3>
                                     </div>
                                 </div>
                                 {
                                     player ?
                                         (selectedMovie.videos && player ? movieTrailer() : null) : (
                                             <div className='content'>
-                                                {selectedMovie.videos && <button className='hero-button' onClick={trailerPlayer}><PlayCircleOutlineIcon sx={{ fontSize: 65, color: 'white' }} /></button>}
+                                                {selectedMovie.videos && <button className='hero-button' onClick={trailerPlayer}><PlayCircleOutlineIcon sx={{ fontSize: 55, color: 'white' }} /></button>}
                                                 <h1 className='hero-title'>{selectedMovie.title}</h1>
                                                 {selectedMovie.overview ? <p className='hero-overview'>{selectedMovie.overview}</p> : null}
                                             </div>
